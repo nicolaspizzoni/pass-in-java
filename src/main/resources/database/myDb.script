@@ -29,7 +29,7 @@ SET FILES NIO TRUE
 SET FILES NIO SIZE 256
 SET FILES LOG TRUE
 SET FILES LOG SIZE 50
-SET FILES CHECK 327
+SET FILES CHECK 30645
 SET DATABASE COLLATION "SQL_TEXT" PAD SPACE
 CREATE USER SA PASSWORD DIGEST 'd41d8cd98f00b204e9800998ecf8427e'
 ALTER USER SA SET LOCAL TRUE
@@ -58,3 +58,7 @@ INSERT INTO "flyway_schema_history" VALUES(1,'1','create-table-events','SQL','V1
 INSERT INTO "flyway_schema_history" VALUES(2,'2','create-table-attendees','SQL','V2__create-table-attendees.sql',120764457,'SA','2024-04-06 00:19:44.827910',79,'1')
 INSERT INTO "flyway_schema_history" VALUES(3,'3','create-table-checkins','SQL','V3__create-table-checkins.sql',1981814507,'SA','2024-04-06 00:19:44.877577',3,'1')
 INSERT INTO "flyway_schema_history" VALUES(4,'4','create-indexes','SQL','V4__create-indexes.sql',-930138772,'SA','2024-04-06 00:19:44.909962',4,'1')
+INSERT INTO EVENTS VALUES('02bd7ced-a726-4d30-bc48-90bda0e063bd','NLW Unite 3','Trilha Java','nlw-unite-3',500)
+INSERT INTO EVENTS VALUES('bb299cfa-9be8-46c7-855e-b729f8f5d2d2','NLW Unite 2','Trilha Java','nlw-unite-2',500)
+INSERT INTO EVENTS VALUES('ed914fd0-d5f7-488e-adb4-679a4fbac6d4','NLW Unite','Trilha Java','nlw-unite',500)
+INSERT INTO ATTENDEES VALUES('02bd7ced-a726-4d30-bc48-90bda0e063bd','Nicolas','teste@gmail.com','02bd7ced-a726-4d30-bc48-90bda0e063bd',NULL)
